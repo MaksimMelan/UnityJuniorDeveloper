@@ -12,7 +12,7 @@
             Console.WriteLine("Введите сколько раз нужно вывести ваше сообщение: ");
             countOfRepetitions = Convert.ToInt32(Console.ReadLine());
 
-            while (countOfRepetitions-- > 0)
+            for (int i = 0; i < countOfRepetitions; i++)
             {
                 Console.WriteLine(userMessage);
             }
