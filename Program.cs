@@ -4,20 +4,17 @@
     {
         static void Main(string[] args)
         {
-            int countOfRepetitions;
-            string userMessage;
+            string closeProgram = "exit";
+            string userIput;
+            
+            Console.WriteLine("Введите собщение: ");
+            userIput = Console.ReadLine();
 
-            Console.WriteLine("Введите сообщение которое нужно вывести: ");
-            userMessage = Console.ReadLine();
-            Console.WriteLine("Введите сколько раз нужно вывести ваше сообщение: ");
-            countOfRepetitions = Convert.ToInt32(Console.ReadLine());
-
-            for (int i = 0; i < countOfRepetitions; i++)
+            while(userIput != closeProgram)
             {
-                Console.WriteLine(userMessage);
-            }
-
-            Console.ReadKey();
+                Console.WriteLine(userIput);
+                userIput = Console.ReadLine();
+            }           
         }
     }
 }
