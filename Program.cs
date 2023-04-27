@@ -8,13 +8,14 @@
             string closeProgram = "exit";
             string userIput;
             
-            Console.WriteLine("Введите собщение: ");
+           
             userIput = Console.ReadLine();
 
             while(isExit == false)
             {
-                Console.WriteLine(userIput);
+                Console.WriteLine("Введите собщение: ");
                 userIput = Console.ReadLine();
+                Console.WriteLine(userIput);
 
                 if (userIput == closeProgram)
                 {
