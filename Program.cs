@@ -9,7 +9,7 @@
             string programExitMessage = "The game is over";
             string userIput;
             string programGreeting = "Здравтсвуй пользователь!";
-            string actionSuggestion = "Введите собщение. \nДля выхода из программы наберите - \"exit\" ";
+            string actionSuggestion = $"Введите собщение. \nДля выхода из программы наберите - \"{closeProgram}\" ";
 
             Console.WriteLine(programGreeting);
 
