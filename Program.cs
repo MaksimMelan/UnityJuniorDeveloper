@@ -6,19 +6,22 @@
         {
             bool isExit = false;
             string closeProgram = "exit";
+            string programExitMessage = "The game is over";
             string userIput;
-            
-           
-            userIput = Console.ReadLine();
+            string programGreeting = "Здравтсвуй пользователь!";
+            string actionSuggestion = "Введите собщение. \nДля выхода из программы наберите - \"exit\" ";
 
-            while(isExit == false)
+            Console.WriteLine(programGreeting);
+
+            while (isExit == false)
             {
-                Console.WriteLine("Введите собщение: ");
+                Console.WriteLine(actionSuggestion);
                 userIput = Console.ReadLine();
                 Console.WriteLine(userIput);
 
                 if (userIput == closeProgram)
                 {
+                    Console.WriteLine(programExitMessage);
                     isExit = true;
                 }
             }           
