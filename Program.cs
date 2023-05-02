@@ -4,27 +4,16 @@
     {
         static void Main(string[] args)
         {
-            bool isExit = false;
-            string closeProgram = "exit";
-            string programExitMessage = "The game is over";
-            string userIput;
-            string programGreeting = "Здравтсвуй пользователь!";
-            string actionSuggestion = $"Введите собщение. \nДля выхода из программы наберите - \"{closeProgram}\" ";
+            int sequenceValue;
+            int progressionDifference = 7;          
+            int finalSequenceValue = 96;
 
-            Console.WriteLine(programGreeting);
-
-            while (isExit == false)
+            for(sequenceValue = 5; sequenceValue <= finalSequenceValue; sequenceValue+= progressionDifference)
             {
-                Console.WriteLine(actionSuggestion);
-                userIput = Console.ReadLine();
-                Console.WriteLine(userIput);
+                Console.WriteLine(sequenceValue);
+            }
 
-                if (userIput == closeProgram)
-                {
-                    Console.WriteLine(programExitMessage);
-                    isExit = true;
-                }
-            }           
+
         }
     }
 }
