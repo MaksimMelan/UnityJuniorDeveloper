@@ -8,9 +8,9 @@
             int progressionDifference = 7;          
             int finalSequenceValue = 96;
 
-            for(int i = sequenceValue; sequenceValue <= finalSequenceValue; sequenceValue+= progressionDifference)
+            for(int i = sequenceValue; i <= finalSequenceValue; i+= progressionDifference)
             {
-                Console.WriteLine(sequenceValue);
+                Console.WriteLine(i);
             }
         }
     }
