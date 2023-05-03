@@ -4,16 +4,14 @@
     {
         static void Main(string[] args)
         {
-            int sequenceValue;
+            int sequenceValue = 5;
             int progressionDifference = 7;          
             int finalSequenceValue = 96;
 
-            for(sequenceValue = 5; sequenceValue <= finalSequenceValue; sequenceValue+= progressionDifference)
+            for(int i = sequenceValue; sequenceValue <= finalSequenceValue; sequenceValue+= progressionDifference)
             {
                 Console.WriteLine(sequenceValue);
             }
-
-
         }
     }
 }
